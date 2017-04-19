@@ -1,0 +1,22 @@
+{
+  "name": "polymer-routing",
+  "authors": [
+    "Nico Jansen <jansennico@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "^1.0.10",
+    "polymer": "^1.9.1",
+    "app-elements": "^1.0.0"
+  }
+}
