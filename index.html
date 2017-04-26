@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <base href="/">
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/polymer/polymer.html"></link>
     <link rel="import" href="bower_components/iron-elements/iron-elements.html"></link>
@@ -20,7 +21,7 @@
         </template>
         <script>
             Polymer({
-                is: 'my-app',
+                is: 'my-app'
             });
         </script>
     </dom-module>
@@ -38,8 +39,14 @@
                         notify: true
                     }
                 },
+                created() {
+                    // TODO: REMOVE!! when we remove `use-hash-as-path`
+                    if (!window.location.hash) {
+                        window.location.hash = '/';
+                    }
+                },
                 selectNL() {
-                    this.country = 'nl';
+                    this.set('country', 'nl');
                 }
             })
         </script>
